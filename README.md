@@ -1,5 +1,6 @@
 # Inventory Capital Optimizer
-#### ML-Driven Demand Forecasting & Prescriptive Liquidation Engine
+**ML-Driven Demand Forecasting & Prescriptive Liquidation Engine**
+
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![XGBoost](https://img.shields.io/badge/ML-XGBoost-orange)](https://xgboost.readthedocs.io/)
 [![LightGBM](https://img.shields.io/badge/ML-LightGBM-green)](https://lightgbm.readthedocs.io/)
@@ -50,7 +51,7 @@ Initially, the models were evaluated using RMSE (Root Mean Square Error). Howeve
 **From Flat-File to Star Schema Architecture**
 Early iterations used a single, wide CSV for Tableau. This led to "Aggregated Measure Inflation" (where Category RMSE was incorrectly summed).
 
-*   **The Change:** Migrated to a Star Schema with Fact (inventory_fact) and Dimension (product_dim, store_dim) tables.
+*   **The Change:** Migrated to a Star Schema with Fact (`inventory_fact`) and Dimension (`product_dim`, `store_dim`) tables.
 *   **The Result:** Ensured data integrity and allowed for sub-second dashboard performance even with complex "What-If" parameters.
 ## Key Insights
 

@@ -23,7 +23,7 @@ warnings.filterwarnings("ignore")
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(SCRIPT_DIR, "..", "data", "processed", "erp_retail_data.db")
 CSV_SOURCE = os.path.join(SCRIPT_DIR, "..", "data", "raw", "retail_store_inventory.csv")
-OUTPUT_DIR = os.path.join(SCRIPT_DIR, "..", "outputs")
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "..", "data", "processed")
 CONFIG = {
     "LEAD_TIMES": {"Furniture": 14, "Electronics": 10, "Toys": 7, "Clothing": 5, "Groceries": 2},
     "SHELF_LIFE": {"Groceries": 7, "Clothing": 45, "Electronics": 90, "Furniture": 180, "Toys": 60},
